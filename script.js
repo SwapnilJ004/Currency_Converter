@@ -75,5 +75,5 @@ async function onSubmit(event){
     message.innerText = `1 ${inputCountry} = ${conversionRate} ${outputCountry}`;
     
     let finalAmount = inputAmount * conversionRate;
-    inputAmountAttr.value = `${finalAmount}`;
+    inputAmountAttr.value = `${finalAmount.toFixed(3)}`;
 }
